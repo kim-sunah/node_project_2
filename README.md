@@ -1,3 +1,7 @@
+# api 명세서
+
+- https://docs.google.com/spreadsheets/d/1dmlnwcbop_9Ow2ARHsKPUEqh_z1-v_RWf05FNE_EsmA/edit#gid=0
+
 # 환경변수
 
 - .env 파일에 어떤 환경변수가 추가되어야 하는지 작성합니다.
