@@ -1,15 +1,6 @@
-# api 명세서
-
-- https://docs.google.com/spreadsheets/d/1dmlnwcbop_9Ow2ARHsKPUEqh_z1-v_RWf05FNE_EsmA/edit#gid=0
-
 # 환경변수
 
-- .env 파일에 어떤 환경변수가 추가되어야 하는지 작성합니다.
-- key=value 형태에서 key만 나열합니다. value는 비밀!
-
-- DB_URL
-- JWT_SECRET
-- 그 밖의 사용한 환경변수를 나열해 주세요.
+-SERVER_PORT
 
 # API 명세서 URL
 

@@ -1,22 +1,11 @@
-const express = require("express");
-const app = express();
-const port = 3000;
+import express from 'express';
+import { SERVER_PORT } from './constants/app.constans.js'
+const app = express()
 
-const productsRouter = require("./routers/products.router.js");
-const authRouter = require("./routers/auth.router.js");
-const usersRouter = require("./routers/users.router.js");
-const handleServerError = require("./middlwares/need-signin.middlware.js");
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+})
 
-app.use(express.json());
-app.use("/api", [productsRouter, authRouter, usersRouter]);
-app.use(express.static("assets"));
-
-app.get("/", (req, res) => {
-    res.send("Hello, World!");
-});
-
-app.use(handleServerError);
-
-app.listen(port, () => {
-    console.log(`${port} 번 포트로 서버 실행`);
-});
+app.listen(SERVER_PORT, () => {
+    console.log(`Example app listening on port ${SERVER_PORT}`)
+})

@@ -1,10 +1,11 @@
 {
   "name": "node_project_2",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
-    "start": "nodemon app"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -18,17 +19,7 @@
   },
   "homepage": "https://github.com/kim-sunah/node_project_2#readme",
   "dependencies": {
-    "bcrypt": "^5.1.1",
-    "bcryptjs": "^2.4.3",
-    "cookie-parser": "^1.4.6",
     "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "jsonwebtoken": "^9.0.2",
-    "mysql2": "^3.6.3",
-    "sequelize": "^6.35.0"
-  },
-  "devDependencies": {
-    "sequelize-cli": "^6.6.2"
-  },
-  "description": ""
+    "express": "^4.18.2"
+  }
 }
