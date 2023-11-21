@@ -5,6 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "dev": "nodemon app.js",
+    "migrate:up": "npx sequelize db:migrate --config config/config.cjs",
+    "migrate:down": "npx sequelize db:undo --config config/config.cjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +23,12 @@
   "homepage": "https://github.com/kim-sunah/node_project_2#readme",
   "dependencies": {
     "dotenv": "^16.3.1",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mysql2": "^3.6.4",
+    "sequelize": "^6.35.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "sequelize-cli": "^6.6.2"
   }
 }
